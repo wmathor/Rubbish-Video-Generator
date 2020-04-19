@@ -23,7 +23,7 @@ $ git clone https://github.com/cwjokaka/bilibili_member_crawler.git
 
 ##### 示例
 
-![](https://s1.ax1x.com/2020/04/19/JuNRZF.png)
+![](https://s1.ax1x.com/2020/04/19/Juy9QH.png)
 
 ![](https://s1.ax1x.com/2020/04/19/JuNLZD.png)
 
@@ -33,7 +33,7 @@ $ git clone https://github.com/cwjokaka/bilibili_member_crawler.git
 2. 将台词写入文本→`getText(file)`
 3. 获取视频总时长→`getLength(video)`
 4. 给视频添加背景音乐→`add_audio(video, mp3, output='out.mp4')`
-5. 文本转人声
+5. 文本转人声→讯飞API
 6. 给视频添加人声→`add_people(mp3_file, video_file)`
 7. 清除中间生成的文件→`clean()`
 

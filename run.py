@@ -158,10 +158,12 @@ def subTitle(text_file, video_file, output='out_sub.mp4'):
     print(sentences)
     
     txts = [] # 所有字幕剪辑
-    for sentence, span, start in sentences:
-        txt = (TextClip(sentence, fontsize=50, align='center', color='black', font='SimHei')
-                .set_position(("center","bottom")).set_duration(int(span)).set_start(int(start)))
-        txts.append(txt)
+    with open('args.txt') as f:
+        color = f.readlines()[4].strip()
+        for sentence, span, start in sentences:
+            txt = (TextClip(sentence, fontsize=50, align='center', color=color, font='SimHei')
+                    .set_position(("center","bottom")).set_duration(int(span)).set_start(int(start)))
+            txts.append(txt)
 
     video2 = CompositeVideoClip([video1, *txts])
     video2.write_videofile(output)
