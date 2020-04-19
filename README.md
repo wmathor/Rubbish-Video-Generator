@@ -1,6 +1,8 @@
 # Rubbish-Video-Generator
 营销号**视频**生成器~仅供娱乐
 
+功能：自动生成文本，自动添加字幕，自动给字幕配音
+
 - 下载
 - 如何使用
   - 示例
@@ -18,7 +20,7 @@ $ git clone https://github.com/wmathor/Rubbish-Video-Generator.git
 1. 需准备一个时长大于50s的视频，有无背景音乐均可，命名为`in.mp4`
 2. 需准备一个时长大于50s的BGM，命名为`in.mp3`
 3. 提前在`args.txt`文本中定义好主体、事件、另一种说法
-4. 在args.txt文本中添加讯飞语音合成（流式版）的`APPID`、`APIKey`、`APISecret`，以英文分号`;`分隔
+4. 在`args.txt`文本中添加讯飞语音合成（流式版）的`APPID`、`APIKey`、`APISecret`，以英文分号`;`分隔
 5. 执行程序
 
 ##### 示例
