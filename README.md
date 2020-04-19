@@ -10,7 +10,7 @@
 #### 下载
 
 ```shell
-$ git clone https://github.com/cwjokaka/bilibili_member_crawler.git
+$ git clone https://github.com/wmathor/Rubbish-Video-Generator.git
 ```
 
 #### 如何使用
