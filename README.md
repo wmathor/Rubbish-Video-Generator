@@ -37,9 +37,10 @@ $ git clone https://github.com/wmathor/Rubbish-Video-Generator.git
 2. 将台词写入文本→`getText(file)`
 3. 获取视频总时长→`getLength(video)`
 4. 给视频添加背景音乐→`add_audio(video, mp3, output='out.mp4')`
-5. 文本转人声→讯飞API
-6. 给视频添加人声→`add_people(mp3_file, video_file)`
-7. 清除中间生成的文件→`clean()`
+5. 给视频添加字幕→`subTitle(text_file, video_file, output='out_sub.mp4')`
+6. 文本转人声→讯飞API
+7. 给视频添加人声→`add_people(mp3_file, video_file)`
+8. 清除中间生成的文件→`clean()`
 
 ### LICENSE
 
