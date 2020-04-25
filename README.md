@@ -17,6 +17,14 @@ $ git clone https://github.com/wmathor/Rubbish-Video-Generator.git
 
 ### 如何使用
 
+moviepy == 1.0.0
+
+python > 3.5
+
+自行安装ImageMagick
+
+缺少的库自行pip
+
 [B站讲解](https://www.bilibili.com/video/BV1Ap4y1y7o7)
 
 1. 需准备一个时长大于50s的视频，有无背景音乐均可，命名为`in.mp4`
