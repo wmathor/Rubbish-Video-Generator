@@ -3,8 +3,7 @@
 
 功能：自动生成文本，自动添加字幕，自动给视频配音（人声）
 
-- [1.1版本更新]()
-
+- [1.1版本更新](https://github.com/wmathor/Rubbish-Video-Generator#bug11%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0 )
 - [下载](https://github.com/wmathor/Rubbish-Video-Generator#%E4%B8%8B%E8%BD%BD)
 - [如何使用](https://github.com/wmathor/Rubbish-Video-Generator#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8 )
   - [示例](https://github.com/wmathor/Rubbish-Video-Generator#%E7%A4%BA%E4%BE%8B )
