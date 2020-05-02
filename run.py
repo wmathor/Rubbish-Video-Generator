@@ -159,9 +159,11 @@ def subTitle(text_file, video_file, output='out_sub.mp4'):
     
     txts = [] # 所有字幕剪辑
     with open('args.txt') as f:
-        color = f.readlines()[4].strip()
+        args = f.readlines()
+        color = args[4].strip()
+        fontsize = int(args[5].strip())
         for sentence, span, start in sentences:
-            txt = (TextClip(sentence, fontsize=50, align='center', color=color, font='SimHei')
+            txt = (TextClip(sentence, fontsize=fontsize, align='center', color=color, font='SimHei')
                     .set_position(("center","bottom")).set_duration(int(span)).set_start(int(start)))
             txts.append(txt)
 
@@ -177,13 +179,17 @@ def getLength(video): # 获取视频时长
     return "%02d:%02d:%02d" % (h, m, s)
 
 def add_audio(video, mp3, output='out.mp4'): # 将背景音乐添加到视频中
+
     BGM = 'ffmpeg -i {mp3} -ss 00:00:00.0 -t {time} -acodec copy BGM.mp3'.format(mp3=mp3, time=total_time)
     subprocess.call(BGM, shell=True)
 
     volume = 'ffmpeg -i BGM.mp3 -vcodec copy -af "volume=-20dB" BGM_volume.mp3'
     subprocess.call(volume, shell=True)
+
+    BGM1 = 'ffmpeg -i {video} -c:v copy -an nosound.mp4'.format(video=video)
+    subprocess.call(BGM1)
     
-    command = "ffmpeg -i {mp3} -i {video} -y {output}".format(video=video, mp3='BGM_volume.mp3', output=output)
+    command = "ffmpeg -i {mp3} -i {video} -y {output}".format(video='nosound.mp4', mp3='BGM_volume.mp3', output=output)
     subprocess.call(command, shell=True)
 
 
@@ -204,6 +210,7 @@ def clean():
     os.remove('test.mp3')
     os.remove('BGM.mp3')
     os.remove('BGM_volume.mp3')
+    os.remove('nosound.mp4')
 
 if __name__ == "__main__":
     getVideo() # 裁剪视频
