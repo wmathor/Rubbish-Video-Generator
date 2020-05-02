@@ -3,11 +3,18 @@
 
 功能：自动生成文本，自动添加字幕，自动给视频配音（人声）
 
-- [下载](https://github.com/wmathor/Rubbish-Video-Generator#%E4%B8%8B%E8%BD%BD )
+- [1.1版本更新]()
+
+- [下载](https://github.com/wmathor/Rubbish-Video-Generator#%E4%B8%8B%E8%BD%BD)
 - [如何使用](https://github.com/wmathor/Rubbish-Video-Generator#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8 )
   - [示例](https://github.com/wmathor/Rubbish-Video-Generator#%E7%A4%BA%E4%BE%8B )
 - [设计思路](https://github.com/wmathor/Rubbish-Video-Generator#%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF )
 - [LICENSE](https://github.com/wmathor/Rubbish-Video-Generator#license)
+
+### :bug:1.1版本更新
+
+- 修复了原视频带有bgm，最终生成的视频没有声音的问题
+- 现在支持手动设定字体大小，在`args.txt`文件中的第五行进行设置
 
 ### 下载
 
@@ -24,6 +31,14 @@ python > 3.5
 自行安装ImageMagick
 
 缺少的库自行pip
+
+如果报错'module 'websocket' has no attribute 'enableTrace''，请参考下面的解决方案
+
+```shell
+pip uninstall websocket
+pip uninstall websocket-client
+pip install websocket-client
+```
 
 [B站讲解](https://www.bilibili.com/video/BV1Ap4y1y7o7)
 
