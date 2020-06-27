@@ -49,7 +49,7 @@ pip install websocket-client
 
 #### 示例
 
-![](https://s1.ax1x.com/2020/04/19/Juy9QH.png)
+![](https://s1.ax1x.com/2020/06/27/Nc3ctK.png#shadow)
 
 ![](https://s1.ax1x.com/2020/04/19/JuNLZD.png)
 
