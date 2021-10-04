@@ -1,6 +1,7 @@
 # Rubbish-Video-Generator
 
 [B站讲解](https://www.bilibili.com/video/BV1Ap4y1y7o7)
+希望从中获得帮助的uu们可以给up一个三连支持一下!
 
 营销号**视频**生成器~仅供娱乐
 
